@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Calculator</title>
+</head>
+<body>
+    <div class="logo-bar">
+        <span class="logo-icon">🧮</span>
+        <span class="logo-title">Modern Calculator</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+            <span class="theme-toggle-icon">🌙</span>
+        </button>
+    </div>
+    <main class="calculator" aria-label="Modern Calculator">
+        <section class="display-section">
+            <div class="display" id="display" aria-live="polite">0</div>
+        </section>
+        <section class="buttons" id="buttons">
+            <button class="btn memory" data-action="MC" aria-label="Memory Clear">MC</button>
+            <button class="btn memory" data-action="MR" aria-label="Memory Recall">MR</button>
+            <button class="btn memory" data-action="M+" aria-label="Memory Add">M+</button>
+            <button class="btn memory" data-action="M-" aria-label="Memory Subtract">M-</button>
+
+            <button class="btn clear" data-action="clear" aria-label="Clear">C</button>
+            <button class="btn delete" data-action="delete" aria-label="Delete">⌫</button>
+            <button class="btn history" data-action="history" aria-label="Show History">📋</button>
+            <button class="btn operator" data-action="/" aria-label="Divide">÷</button>
+
+            <button class="btn" data-action="7">7</button>
+            <button class="btn" data-action="8">8</button>
+            <button class="btn" data-action="9">9</button>
+            <button class="btn operator" data-action="*" aria-label="Multiply">×</button>
+
+            <button class="btn" data-action="4">4</button>
+            <button class="btn" data-action="5">5</button>
+            <button class="btn" data-action="6">6</button>
+            <button class="btn operator" data-action="-" aria-label="Subtract">−</button>
+
+            <button class="btn" data-action="1">1</button>
+            <button class="btn" data-action="2">2</button>
+            <button class="btn" data-action="3">3</button>
+            <button class="btn operator" data-action="+" aria-label="Add">+</button>
+
+            <button class="btn" data-action="sqrt" aria-label="Square Root">√</button>
+            <button class="btn" data-action="percent" aria-label="Percent">%</button>
+            <button class="btn" data-action="reciprocal" aria-label="Reciprocal">1/x</button>
+            <button class="btn" data-action="sign" aria-label="Toggle Sign">+/-</button>
+
+            <button class="btn zero" data-action="0">0</button>
+            <button class="btn" data-action="decimal">.</button>
+            <button class="btn equals" data-action="equals" aria-label="Equals">=</button>
+        </section>
+    </main>
+    <section class="history-panel" aria-label="Calculation History">
+        <div class="history-header">
+            <h2 class="history-title">Calculation History</h2>
+            <button class="close-history" data-action="close-history" aria-label="Close History">Close</button>
+        </div>
+        <div class="history-list">
+            <div class="history-empty">No calculations yet.</div>
+        </div>
+    </section>
+    <div class="overlay" data-action="close-history"></div>
+    <script src="app.js"></script>
+    <footer class="site-footer">
+        <span>&copy; 2025 Modern Calculator &mdash; Made with <span class="footer-heart">&#10084;&#65039; By SAMI KHAN</span></span>
+    </footer>
+</body>
+</html>
